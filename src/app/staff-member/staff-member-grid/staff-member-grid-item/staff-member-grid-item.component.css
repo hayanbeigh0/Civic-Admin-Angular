@@ -1,0 +1,6 @@
+.inline-elements{
+    display: flex;
+}
+.inline-element{
+    padding-right: 10px;
+}

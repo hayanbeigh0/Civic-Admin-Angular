@@ -1,0 +1,60 @@
+<div class="container">
+  <h3>Add Staff Member</h3>
+  <form
+    [formGroup]="myForm"
+    (ngSubmit)="addStaffMember()"
+    class="staff-enroll-form"
+    action="submit"
+  >
+    <div class="row-1">
+      <input
+        type="text"
+        id="firstName"
+        formControlName="firstName"
+        class="input-fields"
+        placeholder="First Name"
+      />
+      <input
+        type="text"
+        id="lastName"
+        formControlName="lastName"
+        class="input-fields"
+        placeholder="Last Name"
+      />
+      <input
+        type="tel"
+        formControlName="mobileNumber"
+        id="mobileNumber"
+        class="input-fields"
+        placeholder="Contact Number"
+      />
+      <input
+        type="email"
+        formControlName="email"
+        id="email"
+        class="input-fields"
+        placeholder="Email"
+      />
+      <input
+        type="text"
+        formControlName="municipality"
+        id="municipality"
+        class="input-fields"
+        placeholder="Municipality"
+      />
+      <select formControlName="role">
+        <option disabled selected value="">Role</option>
+        <option value="Supervisor">Supervisor</option>
+        <option value="Staff">Staff</option>
+        <option value="Excecutive Officer">Excecutive Officer</option>
+      </select>
+    </div>
+    <button
+      type="button"
+      class="btn btn-active button"
+      (click)="addStaffMember()"
+    >
+      Submit
+    </button>
+  </form>
+</div>

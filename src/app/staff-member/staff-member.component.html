@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="heading">
+    <h3>All staff members</h3>
+    <a [routerLink]="['/addStaffMember']">Add staff member</a>
+  </div>
+  <div class="staff-search-field">
+    <input
+      value="staff"
+      type="text"
+      class="search-field"
+      placeholder="Search"
+      [(ngModel)]="inputText"
+    />
+    <button
+      value="staff"
+      class="btn btn-active"
+      (click)="searchStaffMember(inputText)"
+    >
+      Search
+    </button>
+  </div>
+  <h3 style="margin-bottom: 20px">Showing staff members based on name</h3>
+  <app-staff-member-grid></app-staff-member-grid>
+</div>

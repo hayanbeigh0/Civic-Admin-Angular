@@ -1,0 +1,20 @@
+.navbar {
+    height: 3%;
+    margin: 0;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(165, 163, 42);
+  }
+  
+  .left-item {
+    margin-right: auto;
+  }
+  a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
